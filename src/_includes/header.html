@@ -3,6 +3,13 @@
 <!-- ============================================ -->
 {% set navPages = collections.all | eleventyNavigation %}
 
+<div id="banner">
+    <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+    </svg>
+    <span>$80 Service Calls Special!</span>
+</div>
+
 <div id="navigation">
     <div aria-hidden="true" class="background-color-div">
         <!--This div is used to overcome a z-index issue where the open
@@ -11,14 +18,22 @@
         -->
     </div>
     <div class="container">
-        <!--Logo - Get SVGs if you can.  I use fiverr to get png's turned into SVGs. Highly recommend it, worth the $20 - get a light and dark version-->
-        <a class="logo" aria-label="click to go to home page" href="/">
-            <!--Light Colored Logo, remove .dark image tag and the .light class if you don't have a dark and light version -->
-            <img class="light" aria-hidden="true" src="/assets/images/logo-blue.png" decoding="async" alt="logo">
+        <!--Logo Group with DTE Badge-->
+        <div class="logo-group">
+            <!--Logo - Get SVGs if you can.  I use fiverr to get png's turned into SVGs. Highly recommend it, worth the $20 - get a light and dark version-->
+            <a class="logo" aria-label="click to go to home page" href="/">
+                <!--Light Colored Logo, remove .dark image tag and the .light class if you don't have a dark and light version -->
+                <img class="light" aria-hidden="true" src="/assets/images/logo-blue.png" decoding="async" alt="logo">
 
-            <!--Dark Colored Logo-->
-            <img class="dark" aria-hidden="true" src="/assets/images/logo-blue.png" decoding="async" loading="lazy" alt="logo">
-        </a>
+                <!--Dark Colored Logo-->
+                <img class="dark" aria-hidden="true" src="/assets/images/logo-blue.png" decoding="async" loading="lazy" alt="logo">
+            </a>
+            
+            <!--DTE Energy Partner Badge-->
+            <div class="dte-badge">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/DTE_Logo_Blue.svg" alt="DTE Energy Partner" loading="lazy" decoding="async">
+            </div>
+        </div>
 
         <!--Mobile Nav toggle-->
         <button class="hamburger-menu" aria-expanded="false" aria-controls="navbar-menu">
